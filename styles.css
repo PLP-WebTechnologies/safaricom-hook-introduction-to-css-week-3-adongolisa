@@ -1,0 +1,56 @@
+/* Element Selector: Change the font size of all headings */
+h1, h2, h3 {
+    font-size: 24px;
+}
+
+/* Class Selector: Apply a background color to specific sections */
+.info-section {
+    background-color: lightyellow;
+}
+
+/* ID Selector: Add a border to an element with a unique ID */
+#specials {
+    border: 2px solid green;
+}
+
+/* Change the background color of the webpage */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Style links with hover effects */
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Basic Styling Properties */
+p {
+    color: darkblue;
+    background-color: #e0e0e0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+div {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Create a simple card component */
+.card {
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
