@@ -1,19 +1,5 @@
-/* Element Selector: Change the font size of all headings */
-h1, h2, h3 {
-    font-size: 24px;
-}
 
-/* Class Selector: Apply a background color to specific sections */
-.info-section {
-    background-color: lightyellow;
-}
-
-/* ID Selector: Add a border to an element with a unique ID */
-#specials {
-    border: 2px solid green;
-}
-
-/* Change the background color of the webpage */
+/
 body {
     background-color: #f0f0f0;
 }
@@ -25,19 +11,73 @@ a:hover {
 }
 
 /* Basic Styling Properties */
-p {
-    color: darkblue;
-    background-color: #e0e0e0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
     font-weight: bold;
-    text-align: justify;
-}
-
-div {
-    margin: 20px;
-    padding: 10px;
-}
+    color: #f4a261;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f4a261; /* Highlight color on hover */
+  }
+  
+  /* Info Section Styles */
+  .info-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .info-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .info-section p:hover {
+    color: #f4a261; /* Highlight the text on hover */
+    transition: color 0.3s ease;
+  }
 
 /* Create a simple card component */
 .card {
@@ -54,3 +94,88 @@ div {
 .card p {
     margin-bottom: 0;
 }
+
+#specials {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  #specials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #specials p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .menu-container {
+    display: flex; /* Arrange .menu divs side by side */
+    justify-content: space-between; /* Space between each menu item */
+    align-items: center; /* Vertically align menu items */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
+  }
+  
+  .menu {
+    flex: 1; /* Equal size for all menu items */
+    max-width: 200px; /* Ensure images don’t stretch too much */
+    text-align: center;
+  }
+  
+  .menu img {
+    width: 100%; /* Make the images responsive */
+    height: auto;
+    border-radius: 8px; /* Add rounded corners to images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .menu img:hover {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+.menu{
+    background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+footer {
+    background-color: #111; /* Dark footer for consistency */
+    color: #888; /* Subtle text color */
+    text-align: center;
+    padding: 15px 10px;
+    position: relative; /* Change to 'fixed' for sticky footer */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  footer p a {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer p:hover {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
